@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+enum DetectProcessStatus {
+  SUCCESS = 0;
+  WAITING = 1;
+  FAILED = 2;
+}
+
+message AudioGenderDetectRequest { bytes file = 1; }
+
+message AudioGenderDetectResult {
+  uint32 id = 1;
+  string file_id = 2;
+  optional double male_prob = 3;
+  optional double female_prob = 4;
+  DetectProcessStatus status = 5;
+  google.protobuf.Timestamp created_at = 6;
+}
+
+message AudioGenderSelectRequest { string file_id = 1; }
