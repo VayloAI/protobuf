@@ -1,6 +1,6 @@
 {
   "name": "@vaylo/proto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Toil",
   "devDependencies": {
     "@types/bun": "latest",
@@ -11,7 +11,7 @@
     "typescript": "^5.7.3"
   },
   "exports": {
-    "./proto/*": {
+    "./*": {
       "require": "./dist/proto/*.js",
       "import": "./dist/proto/*.js",
       "types": "./dist/proto/*.d.ts"
