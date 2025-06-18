@@ -1,10 +1,10 @@
 {
   "name": "@vaylo/proto",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Toil",
   "devDependencies": {
     "@types/bun": "latest",
-    "ts-proto": "^2.6.1",
+    "ts-proto": "^2.7.5",
     "tsc-esm-fix": "^3.1.2"
   },
   "peerDependencies": {
